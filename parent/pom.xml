@@ -29,7 +29,7 @@
 
     <groupId>org.opendaylight.ODL-skeleton</groupId>
     <artifactId>ODL-skeleton-parent</artifactId>
-    <name>Toaster parent</name>
+    <name>ODL-skeleton parent</name>
     <version>0.0.1-SNAPSHOT</version> <!-- Note using same version from Root pom.xml -->
     <packaging>pom</packaging> <!-- This line is very important, we aren't making any other side-effects
         than the POM -->

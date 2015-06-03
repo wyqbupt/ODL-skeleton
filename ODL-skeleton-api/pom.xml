@@ -14,7 +14,7 @@
     <!-- This pom.xml is providing the hook to the yang files that define the API. We will define a yang model later -->
     <modelVersion>4.0.0</modelVersion>
     <artifactId>ODL-skeleton-api</artifactId>
-    <description>Yang Model/API for Toaster</description>
+    <description>Yang Model/API for ODL-skeleton</description>
     <packaging>bundle</packaging>
     <name>${project.artifactId}</name>
     <prerequisites>
