@@ -2,9 +2,10 @@
 
 This is an application named "ODL-skeleton".
 
-When build succeed, you can follow Commands below to install feature.
-	
-	feature:install ODL-skeleton-api
-	feature:install ODL-skeleton-impl
-	feature:install ODL-skeleton-consumer
+This section modifies ODL-skeleton-api
+this file will be undated
+ODL-skeleton-api/pom.xml
+ODL-skeleton-api/src/main/yang/skeleton.yang
+features/src/main/resources/features.xml
+
 	
