@@ -4,24 +4,16 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.2.0 http://karaf.apache.org/xmlns/features/v1.2.0">
 
-    <!-- TODO: Keith's file was windows format, I grabbed another sample file, ?convert? his file to unix format -->
-    <!-- TODO: Keith's file had a bunch of instructions so need to add them  -->
-    <!-- TODO: for any repo dependencies, add an entry in the features/pom.xml dependency section -->
     <repository>mvn:org.opendaylight.yangtools/features-yangtools/${yangtools.version}/xml/features</repository>
     <repository>mvn:org.opendaylight.controller/features-mdsal/${controller.mdsal.version}/xml/features</repository>
     <repository>mvn:org.opendaylight.controller/features-nsf/${nsf.version}/xml/features</repository>
     <repository>mvn:org.opendaylight.controller/features-restconf/${controller.restconf.version}/xml/features</repository>
     <repository>mvn:org.opendaylight.openflowplugin/features-openflowplugin/${openflowplugin.version}/xml/features</repository>
 
-    <!--<repository>mvn:org.opendaylight.controller/features-restconf/${controller.restconf.version}/xml/features</repository>-->
-
-    <!-- TODO: for any feature dependencies, add an entry in the features/pom.xml dependency section -->
-
     <feature name='odl-ODL-skeleton-api' version='${project.version}' description='OpenDaylight :: ODL-skeleton :: API'>
         <feature version='${yangtools.version}'>odl-yangtools-common</feature>
         <feature version='${yangtools.version}'>odl-yangtools-binding</feature>
-        <!--<feature version='${controller.mdsal.version}'>odl-mdsal-broker</feature>-->
-        <!--<feature version='${restconf.version}'>odl-restconf</feature>-->
+        <feature version='${controller.restconf.version}'>odl-restconf</feature>
         <bundle>mvn:org.opendaylight.ODL-skeleton/ODL-skeleton-api/${project.version}</bundle>
     </feature>
 
@@ -30,8 +22,9 @@
         <!--<feature version='${yangtools.version}'>odl-yangtools-binding</feature>-->
         <feature version='${controller.mdsal.version}'>odl-mdsal-broker</feature>
         <feature version='${project.version}'>odl-ODL-skeleton-api</feature>
-        <!--<feature version='${restconf.version}'>odl-restconf</feature>-->
+        <feature version='${controller.restconf.version}'>odl-restconf</feature>
         <bundle>mvn:org.opendaylight.ODL-skeleton/ODL-skeleton-impl/${project.version}</bundle>
+        <configfile finalname="ODL-skeleton-impl-config.xml">mvn:org.opendaylight.ODL-skeleton/ODL-skeleton-impl/${project.version}/xml/config</configfile>
     </feature>
 
     <feature name='odl-ODL-skeleton-consumer' version='${project.version}' description='OpenDaylight :: ODL-skeleton :: Consumer'>
@@ -39,7 +32,8 @@
         <!--<feature version='${yangtools.version}'>odl-yangtools-binding</feature>-->
         <feature version='${controller.mdsal.version}'>odl-mdsal-broker</feature>
         <feature version='${project.version}'>odl-ODL-skeleton-api</feature>
-        <!--<feature version='${restconf.version}'>odl-restconf</feature>-->
+        <feature version='${project.version}'>odl-ODL-skeleton-impl</feature>
+        <feature version='${controller.restconf.version}'>odl-restconf</feature>
         <bundle>mvn:org.opendaylight.ODL-skeleton/ODL-skeleton-consumer/${project.version}</bundle>
     </feature>
 </features>

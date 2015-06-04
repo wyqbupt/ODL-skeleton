@@ -70,6 +70,7 @@
         <openflowplugin.version>0.1.0-SNAPSHOT</openflowplugin.version>
         <nsf.version>0.4.2-SNAPSHOT</nsf.version>
         <karaf.base.version>1.4.2-Helium</karaf.base.version>
+        <controller.restconf.version>1.2.0-SNAPSHOT</controller.restconf.version>
         <!-- Controller artifacts -->
         <!-- These need to be at this layer, as opposed to odlparent, as it gives
             the project control of its own versioning. These declarations control the

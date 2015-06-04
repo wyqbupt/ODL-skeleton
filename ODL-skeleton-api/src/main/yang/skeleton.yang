@@ -1,0 +1,58 @@
+module skeleton {
+   namespace "http://netconfcentral.org/ns/skeleton";
+   prefix multi;
+
+   contact
+     "Yuqi Wang <wyqbupt@163.com>";
+
+   description
+     "YANG version of the MIB-file.";
+
+   revision "2015-05-24" {
+     description
+       "skeleton module in progress.";
+   }
+
+   container Skeleton {
+     presence
+       "Indicates the  service is available";
+     description
+       "The container for all node name and the description .";
+     leaf name {
+       type string;
+       config false;
+       mandatory true;
+       description
+         "The name of the node.";
+     }
+
+     leaf description {
+       type string;
+       config false;
+       mandatory true;
+       description
+         "The description of the node.";
+     }
+
+     leaf num {
+       type uint32;
+       config true;
+       default 0;
+       description
+         "The number can be sent into container";
+     }
+   }  // container toaster
+
+   rpc send-message {
+       description "Sending message to datastroe.";
+       input {
+           leaf name {
+                 type string;
+           }
+           leaf description {
+                 type string;
+           }
+       }
+   }
+
+ }  // module toaster
