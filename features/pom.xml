@@ -58,12 +58,6 @@
            <type>xml</type>
        </dependency>
        <dependency>
-           <groupId>org.opendaylight.openflowplugin</groupId>
-           <artifactId>features-openflowplugin</artifactId>
-           <classifier>features</classifier>
-           <type>xml</type>
-        </dependency>
-       <dependency>
            <groupId>org.opendaylight.controller</groupId>
            <artifactId>features-restconf</artifactId>
            <classifier>features</classifier>
