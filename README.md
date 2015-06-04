@@ -2,10 +2,7 @@
 
 This is an application named "ODL-skeleton".
 
-This section modifies ODL-skeleton-api
+This section modifies ODL-skeleton-impl
 this file will be undated
-ODL-skeleton-api/pom.xml
-ODL-skeleton-api/src/main/yang/skeleton.yang
-features/src/main/resources/features.xml
+ODL-skeleton-impl/src/main/java/org/opendaylight/odl/skeleton/ODLSkeletonImpl.java
 
-	
