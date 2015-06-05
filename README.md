@@ -3,6 +3,6 @@
 This is an application named "ODL-skeleton".
 
 This section modifies ODL-skeleton-impl
-this file will be undated
+this file will be updated
 ODL-skeleton-impl/src/main/java/org/opendaylight/odl/skeleton/ODLSkeletonImpl.java
 
