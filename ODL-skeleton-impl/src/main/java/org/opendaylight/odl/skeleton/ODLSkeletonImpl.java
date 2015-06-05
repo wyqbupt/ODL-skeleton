@@ -44,11 +44,11 @@ public class ODLSkeletonImpl implements BindingAwareProvider, AutoCloseable {
     }
 
     /**************************************************************************
-     * MultiprotocolImpl Private Methods
+     * ODLSkeletonImpl Private Methods
      *************************************************************************/
 
     /**
-     * Populates Multiprotocol's initial operational data into the MD-SAL operational
+     * Populates ODLSkeleton's initial operational data into the MD-SAL operational
      * data store.
      * Note - we are simulating protocol writing This is why the name and protocol
      * name are hardcoded.
@@ -81,11 +81,11 @@ public class ODLSkeletonImpl implements BindingAwareProvider, AutoCloseable {
     }
 
     /**
-     * Populates Multiprotocol's default config data into the MD-SAL configuration
+     * Populates ODLSkeleton's default config data into the MD-SAL configuration
      * data store.  Note the database write to the tree are done in a synchronous fashion
      */
     private void initConfiguration() {
-        // Build the default Multiprotocol config data
+        // Build the default ODLSkeleton config data
         Skeleton protocol = new SkeletonBuilder().setNum((long)1 ).build();
 
         // Place default config data in data store tree
