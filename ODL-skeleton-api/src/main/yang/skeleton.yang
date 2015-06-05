@@ -41,7 +41,7 @@ module skeleton {
        description
          "The number can be sent into container";
      }
-   }  // container toaster
+   }  // container
 
    rpc send-message {
        description "Sending message to datastroe.";
@@ -55,4 +55,4 @@ module skeleton {
        }
    }
 
- }  // module toaster
+ }  // module
