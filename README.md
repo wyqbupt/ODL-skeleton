@@ -2,4 +2,5 @@
 
 This is an application named "ODL-skeleton".
 
-This is a Opendaylight Skeleton application	
+This is a Opendaylight application Skeleton.
+
