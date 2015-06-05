@@ -3,7 +3,7 @@
 This is an application named "ODL-skeleton".
 
 This section modifies ODL-skeleton-api
-this file will be undated
+this file will be updated
 ODL-skeleton-api/pom.xml
 ODL-skeleton-api/src/main/yang/skeleton.yang
 features/src/main/resources/features.xml
